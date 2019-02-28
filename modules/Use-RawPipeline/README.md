@@ -77,7 +77,7 @@ Represents a command that has started.
 
 ```PowerShell
 # PowerShell
-Open-FileAsRawPipeline -InputFile 'my-urls' | `
+Get-FileAsRawPipeline -InputFile 'my-urls' | `
     Invoke-NativeCommand -FilePath 'sort'   | `
     Invoke-NativeCommand -FilePath 'unique' | `
     Receive-RawPipeline;
